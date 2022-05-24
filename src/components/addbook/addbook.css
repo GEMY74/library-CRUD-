@@ -1,0 +1,138 @@
+.form__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.alert {
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #db6262;
+  animation: fade 3.5s linear infinite;
+}
+
+.alert i {
+  font-size: 15px;
+  cursor: pointer;
+  background-color: var(--dark-light);
+  padding: 5px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.added {
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #5e9f5e;
+  animation: fade 2s forwards;
+}
+
+.added i {
+  font-size: 15px;
+  cursor: pointer;
+  background-color: var(--dark-light);
+  padding: 5px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+form .input {
+  margin: 0 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+form .input label {
+  background: var(--dark-light);
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form .input input {
+  width: 300px;
+  padding: 10px;
+  border: 0;
+  outline: none;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+input:focus {
+  transform: scale(1.1);
+}
+
+.btn_1 {
+  padding: 10px 0;
+  margin-left: 50px;
+}
+
+.btn_1 button {
+  border: 0;
+  outline: 0;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: var(--white);
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn_1 button.avilable {
+  background: #428b42;
+}
+
+.btn_1 button.avilable:hover {
+  background: #166916;
+}
+
+.btn_1 button.not {
+  background: #f33f3f;
+}
+
+.btn_1 button.not:hover {
+  background: #d81818;
+}
+
+.add {
+  margin-top: 10px;
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 11px;
+  border: 0;
+  outline: 0;
+  color: var(--white);
+  background: #4267b2;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bolder;
+  transition: 0.3s;
+  margin-left: 30px;
+}
+
+.add:hover {
+  background: #2a53a5;
+}

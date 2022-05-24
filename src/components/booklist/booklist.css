@@ -1,0 +1,107 @@
+.table_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20%;
+}
+
+.table__btn {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.refresh-btn {
+  background: var(--dark-light);
+  color: var(--white);
+  border: 0;
+  outline: 0;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+
+/* .delete-btn {
+  color: var(--white);
+  border: 0;
+  outline: 0;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #f33f3f;
+  letter-spacing: 1.5px;
+} */
+
+Table {
+  background-color: var(--dark-light);
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+thead {
+  background-color: var(--dark);
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+tbody {
+  text-align: center;
+  color: var(--dark);
+  background-color: #fff;
+}
+
+.edit,
+.delete {
+  border: 0;
+  outline: 0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.delete {
+  margin-left: 5px;
+  background: #f33f3f;
+}
+
+.edit {
+  background-color: var(--dark-light);
+}
+
+.av {
+  background-color: #73ba73;
+}
+
+.notav {
+  background-color: #e06565;
+}
+
+.title {
+  font-size: 35px;
+}
+
+@media (max-width: 500px) {
+  .table_container {
+    padding: 0 2%;
+  }
+  .refresh-btn {
+    padding: 5px 10px;
+    letter-spacing: 1px;
+  }
+
+  thead {
+    font-size: 15px;
+  }
+}

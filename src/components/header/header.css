@@ -1,0 +1,6 @@
+nav {
+  background: var(--dark-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
